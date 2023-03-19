@@ -1,0 +1,19 @@
+form{
+    width:500px;
+    margin: auto;
+    height:460px;
+    padding-top: 8px;
+    margin-top: 50px;
+    box-shadow: 2px 2px 10px 2px lightblue;
+}
+button{
+    align-items: center;
+    padding: 5px;
+    margin-top: 10px !important;
+    margin-left: 200px !important;
+}
+h3{
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+}

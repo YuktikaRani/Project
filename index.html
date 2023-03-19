@@ -1,0 +1,147 @@
+<html>
+    <head>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">HEALTH CARE</a>
+              </div>
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <div class="container">
+          <div class="row">
+          <div class="col">
+             <div class="header">
+                 <h1>A Medical Care you can always trust</h1>
+                 <h4>Find the good life with good health</h4>
+             </div>
+             <div class="content">
+                  <button type="button" onClick="myfunction()" id="appointment" class="btn btn-success">Get started</button>
+             </div>
+           </div>
+           <div class="col">
+             <div class="secondimage">
+                <img src="download.jpeg" class="second">
+             </div>
+           </div>
+          </div>
+        </div>
+
+        <div class="footer">
+          <div class="footer-content">      
+          <a href="#"> <span class="glyphicon glyphicon-earphone"></a> Hospital Hours 24/7/365 Always available to serve your emergency care needs.</span>
+          </div>
+        </div>
+
+          <script type="text/javascript">
+            function noemailValidation(){
+              $('#emails').hide();
+              }
+              function nopwdValidation(){
+              $('#passwords').hide();
+              }
+              function nocpwdValidation(){
+              $('#cpasswords').hide();
+              }
+            var email=document.getElementById('email').value;
+            var password=document.getElementById('password').value;
+            var cpassword=document.getElementById('cpassword').value;
+            var valid=true;
+            function validate(){
+            var email=document.getElementById('email').value;
+            var password=document.getElementById('password').value;
+            var cpassword=document.getElementById('cpassword').value;
+            var valid=true;
+              if(email==""){
+                document.getElementById('emails').innerHTML="**Please enter the email.";
+                valid=false;
+               return false;
+              }
+              else{
+              valid=true;
+              }
+            
+              if(password==""){
+               document.getElementById('passwords').innerHTML="**Please enter the password.";
+                valid=false; 
+               return false;
+              }
+              else{
+              valid=true;
+              }
+              if(cpassword==""){
+              document.getElementById('cpasswords').innerHTML="**Please enter the password.";
+              valid=false;
+              return false;
+              }
+              else{
+              valid=true;
+              }
+             if(password.length<8){
+              document.getElementById('passwords').innerHTML="**Password must be atleast 8 characters long.";
+              valid=false;
+              return false;
+              }
+              else{
+              valid=true;
+              }
+             if(password.length>14){
+              document.getElementById('passwords').innerHTML="**Password must be atmost 12 characters long.";
+              valid=false;
+              return false;
+              }
+              else{
+              valid=true;
+              }
+             if(cpassword!=password){
+              document.getElementById('cpasswords').innerHTML="**Password must be same.";
+              valid=false;
+              return false;
+              }
+              else{
+              valid=true;
+              }
+              if(valid){
+              displayDetails();
+              //window.location.href="home.html";
+              }
+              return false;
+              }
+              
+              function noemailValidation(){
+              $('#emails').hide();
+              }
+              function nopwdValidation(){
+              $('#passwords').hide();
+              }
+              function nocpwdValidation(){
+              $('#cpasswords').hide();
+              }
+
+
+              function myfunction(){
+                window.location.href="appointment.html";
+              }
+            </script>
+            
+    </body>
+</html>
